@@ -12,6 +12,7 @@ version: "3.9"
 services:
   autogpt:
     image: qyvlik/autogpt:develop
+    command: --debug --gpt3only
     volumes:
       - ".env:/app/.env"
     profiles: ["exclude-from-up"]
