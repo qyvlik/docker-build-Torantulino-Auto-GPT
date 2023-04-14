@@ -31,6 +31,6 @@ jobs:
         id: docker_build_push
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./Auto-GPT
           push: true
           tags: qyvlik/autogpt:develop
